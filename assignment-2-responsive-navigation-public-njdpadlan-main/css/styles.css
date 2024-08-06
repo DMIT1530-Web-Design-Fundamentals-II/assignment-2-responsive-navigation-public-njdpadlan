@@ -1,0 +1,419 @@
+:root {
+    --dk-grey: #3a3a3a;
+    --lt-grey: #707070;
+    --green: #727812;
+    --white: #f2f2f2;
+    --orange: #c65614;
+    --yellow: #b29124;
+    --bg-grey: #f2f2f2;
+    --CooperHewitt: 'CooperHewitt';
+    --Merriweather: "Merriweather Sans", sans-serif;
+}
+
+@font-face {
+    font-family: 'CooperHewitt';
+    src: url('CooperHewitt-Heavy.ttf') format('truetype');
+    font-weight: 700;
+}
+
+body {
+    font-family: var(--Merriweather);
+    font-size: 0.9rem;
+}
+
+h1 {
+    color: var(--white);
+    font-family: var(--CooperHewitt)
+}
+
+h2 {
+    font-size: 7rem;
+    line-height: 0.7;
+    font-family: 'CooperHewitt';
+}
+
+.good-food span {
+    font-size: 5rem;
+    color: var(--lt-grey);
+}
+
+.good-food h2 {
+    color: var(--dk-grey);
+    margin-bottom: 1rem;
+}
+
+
+.local-travel h2 {
+    color: var(--green);
+    line-height: 0.8;
+    margin-bottom: 3rem;
+}
+
+.Local {
+    position: relative;
+    right: 10rem;
+    top: 1rem;
+}
+
+.Travel {
+    font-size: 6rem;
+    color: var(--lt-grey);
+    position: relative;
+    left: 7.5rem;
+}
+
+.heart {
+    width: 2.5rem;
+    filter: invert(32%) sepia(93%) saturate(799%) hue-rotate(350deg) brightness(100%) contrast(96%);  
+    position: relative;
+    left: 13rem;
+    top: 11rem;
+}
+
+.Stuff h2 {
+    color: var(--dk-grey);
+    padding: 10rem 0 3rem 13rem;
+}
+
+.stuff-cards h3 {
+    position: relative;
+    bottom: 1.2rem;
+    left: 1rem;
+    font-size: 2.3rem;
+    line-height: 1;
+    color: var(--yellow);
+}
+
+.stuff-cards a {
+    color: var(--dk-grey);
+}
+
+.blog-container h2 {
+    font-size: 7rem;
+    color: var(--white);
+    margin-bottom: 2.5rem;
+}
+
+.blog-container span {
+    font-size: 5rem;
+}
+
+.blog-container p {
+    color: var(--white);
+    margin-left: 4rem;
+}
+
+
+.last-line {
+    margin-bottom: 2rem;
+}
+
+
+
+/* BUTTON STYLING */
+.good-food a,
+.local-travel a {
+    text-decoration: none;
+    background: var(--dk-grey);
+    padding: 1rem 3rem;
+    border-radius: 2rem;
+}
+
+.blog-container a {
+    text-decoration: none;
+    background: var(--white);
+    padding: 1rem 3rem;
+    border-radius: 2rem;
+    color: var(--dk-grey);
+    margin-left: 4rem;
+}
+
+
+.flex-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+a {
+    color: var(--white);
+}
+
+
+header {
+    background-color: var(--dk-grey);
+    padding: 0.5rem;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+header img {
+    min-width: 2rem;
+    filter: invert(100%) sepia(2%) saturate(0%) hue-rotate(238deg) brightness(103%) contrast(90%);
+}
+
+.main-menu img {
+    max-width: 1.2rem;
+}
+
+.toggle-btn p {
+    display: none;
+}
+
+
+nav {
+    width: 100%;
+    max-height: 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: flex-end;
+    text-align: end;
+    background-color: var(--dk-grey);
+}
+
+nav li {
+    list-style-type: none;
+}
+
+
+.show-nav {
+    max-height: unset;
+    overflow: visible;
+}
+
+nav li {
+    margin: 0.5rem 0;
+}
+
+.toggle-btn {
+    cursor: pointer;
+}
+
+.first-link {
+    font-size: 1rem;
+}
+
+.first-link img {
+    min-width: 0.5rem;
+}
+
+.first-link img {
+    display: none;
+}
+
+.first-link {
+    text-decoration: none;
+    font-weight: bold;
+    gap: 0.5rem;
+}
+
+/* Main Content */
+
+.good-food {
+    display: flex;
+    justify-content: space-around;
+    padding: 2rem;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+.good-food p {
+    text-align: left;
+}
+
+.good-food-content {
+    position: relative;
+    left: 6rem;
+    top: 9rem;
+}
+
+
+.top-image {
+    position: relative;
+    left: 7rem;
+}
+
+.bottom-image {
+    position: relative;
+    right: 5rem;
+    bottom: 1rem;
+}
+
+.local-travel {
+    display: flex;
+    justify-content: space-around;
+    background-color: var(--bg-grey);
+    height: 35vh;
+}
+
+.local-travel img {
+    height: 55vh;
+    position: relative;
+    bottom: 4rem;
+    left: -5rem;
+}
+
+.local-travel a {
+    position: relative;
+    left: 12rem;
+}
+
+
+.stuff-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.stuff-cards {
+    /* sizing */
+    width: 15rem;
+}
+
+.stuff-cards img {
+    background-color: var(--bg-grey);
+    padding: 1rem 1rem 3rem 1rem;
+}
+
+
+.stuff-cards p,
+.stuff-cards a {
+    position: relative;
+    bottom: 1rem;
+    left: 1rem;
+    margin-bottom: 1rem;
+}
+
+
+.blog {
+    background-color: var(--dk-grey);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 60rem;
+    margin-left: 5rem;
+    margin-bottom: 3rem;
+    padding: 5rem;
+}
+
+.blog-container {
+    position: relative;
+    left: 18rem;
+    top: 0.5rem;
+}
+
+.blog-image {
+    position: relative;
+    left: 20rem;
+    top: 1rem;
+    width: 21rem;
+    /* sizing */
+}
+
+
+
+/* Footer */
+
+footer {
+    background-color: var(--dk-grey);
+}
+
+.footer span {
+    font-weight: bold;
+}
+
+footer p {
+    color: var(--white);
+}
+
+footer img {
+    width: 1.2rem;
+    filter: invert(100%) sepia(2%) saturate(0%) hue-rotate(238deg) brightness(103%) contrast(90%);
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 5rem;
+    padding: 3rem 0 3rem 3rem;
+}
+
+.footer-media {
+    display: flex;
+    gap: 1rem;
+}
+
+.media:hover {
+    filter: invert(21%) sepia(83%) saturate(2560%) hue-rotate(102deg) brightness(102%) contrast(103%);
+}
+
+
+@media screen and (min-width: 700px) {
+
+    .inner-container {
+        display: flex;
+    }
+
+    h1 {
+        margin-left: 4rem;
+    }
+
+    .toggle-btn {
+        display: none;
+    }
+
+    .first-link img {
+        display: unset;
+    }
+
+    .first-link  {
+        display: flex;
+    }
+
+    nav {
+        position: static;
+        overflow: visible;
+    }
+
+    nav ul li {
+        list-style-type: none;
+    }
+
+    .main-menu {
+        display: flex;
+    }
+
+    .main-menu li {
+        position: relative;
+    }
+
+    .main-menu > li {
+        margin: 0;
+    }
+
+    .second-tier {
+        width: 10rem;
+        position: relative;
+        left: -25%;
+        background-color: var(--dk-grey);
+        visibility: hidden;
+    }
+
+    .main-menu li:hover > .second-tier,
+    .second-tier li:hover > .third-tier,
+    ul li:focus-within > ul {
+        visibility: visible;
+    }
+
+    .second-tier {
+        text-align: left;
+        padding-bottom: 0.5rem;
+    }
+
+
+}
